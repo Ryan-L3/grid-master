@@ -11,56 +11,25 @@
     top: 0;
     left: 0;
     background-color: #1a1a1a;
-    padding-top: 20px;
-    transition: 0.3s;
-}
-
-.sidenav.collapsed {
-    width: 60px;
-}
-
-.sidenav-header {
-    padding: 8px 15px;
     display: flex;
-    align-items: center;
-    color: white;
-    margin-bottom: 20px;
+    flex-direction: column;
 }
 
-.toggle-btn {
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 20px;
+.f1-logo{
+    padding: 20px 20px;
 }
-
-.logo {
-    margin-left: 10px;
-    font-size: 20px;
-    display: block;
-}
-
-.collapsed .logo {
-    display: none;
-}
-
 .nav-link {
-    padding: 15px;
+    padding: 30px 35px;
     text-decoration: none;
-    font-size: 16px;
     color: white;
     display: flex;
     align-items: center;
-    transition: 0.3s;
 }
 
 .nav-link:hover {
     background-color: #333;
 }
 
-.nav-link i {
-    margin-right: 10px;
-    width: 20px;
+.nav-text {
+    font-size: 16px;
 }
