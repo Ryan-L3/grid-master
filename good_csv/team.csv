@@ -1,0 +1,124 @@
+team_id,team_name,base_location,championship_won,active
+1,Alpine,United Kingdom,0,1
+2,Aston Martin,United Kingdom,0,1
+3,Ferrari,Italy,16,1
+4,Haas,United States,0,1
+5,Kick Sauber,Switzerland,0,1
+6,McLaren,United Kingdom,8,1
+7,Mercedes,United Kingdom,8,1
+8,RB,Italy,0,1
+9,Red Bull Racing,United Kingdom,6,1
+10,Williams,United Kingdom,9,1
+11,Automobiles Gonfaronnaises Sportives (AGS),France,0,0
+12,Alfa Romeo,Italy,0,0
+13,Alfa Special,South Africa,0,0
+14,AlphaTauri,Italy,0,0
+15,Amon,New Zealand,0,0
+16,Andrea Moda,Italy,0,0
+17,Apollon,Switzerland,0,0
+18,Arrows,United Kingdom,0,0
+19,Automobili Turismo e Sport,Italy,0,0
+20,Auto Technisches Spezialzubeh (ATS),Germany,0,0
+21,British American Racing,United Kingdom,0,0
+22,Behra-Porsche,Germany,0,0
+23,Bellasi,Switzerland,0,0
+24,Benetton,United Kingdom,1,0
+25,Boro,Netherlands,0,0
+26,Brabham,United Kingdom,2,0
+27,Brawn GP,United Kingdom,1,0
+28,British Racing Motors,United Kingdom,1,0
+29,British Racing Partnership,United Kingdom,0,0
+30,Caterham,Malaysia,0,0
+31,Coloni,Italy,0,0
+32,Connaught,United Kingdom,0,0
+33,Connew,United Kingdom,0,0
+34,Cooper Car Company,United Kingdom,2,0
+35,Dallara,Italy,0,0
+36,De Tomaso,Italy,0,0
+37,Eagle (Anglo American Racers),United States,0,0
+38,Eifelland,Germany,0,0
+39,Emeryson,United Kingdom,0,0
+40,Ecurie Nationale Belge,Belgium,0,0
+41,Ensign,United Kingdom,0,0
+42,EuroBrun,Italy,0,0
+43,Ferguson Research Ltd.,United Kingdom,0,0
+44,FIRST,Italy,0,0
+45,Fittipaldi Automotive (Copersucar),Brazil,0,0
+46,Fondmetal,Italy,0,0
+47,Force India (Sahara),India,0,0
+48,Forti,Italy,0,0
+49,Frank Williams Racing Cars,United Kingdom,0,0
+50,Fry,United Kingdom,0,0
+51,Gilby Engineering,United Kingdom,0,0
+52,Hesketh,United Kingdom,0,0
+53,Hill,United Kingdom,0,0
+54,HRT (Hispania Racing Team),Spain,0,0
+55,Honda,Japan,0,0
+56,Jaguar,United Kingdom,0,0
+57,JBW,United Kingdom,0,0
+58,Jordan,Ireland,0,0
+59,Kauhsen,Germany,0,0
+60,Kojima,Japan,0,0
+61,Kurtis,United States,0,0
+62,Lambo (Modena Team),Italy,0,0
+63,Larrousse,France,0,0
+64,LDS,South Africa,0,0
+65,LEC,United Kingdom,0,0
+66,Leyton House,United Kingdom,0,0
+67,Life,Italy,0,0
+68,Ligier,France,0,0
+69,Lola,United Kingdom,0,0
+70,Lotus,United Kingdom,7,0
+71,Lyncar,United Kingdom,0,0
+72,Maki,Japan,0,0
+73,Manor,United Kingdom,0,0
+74,March,United Kingdom,0,0
+75,Martini,France,0,0
+76,Marussia,Russia,0,0
+77,Maserati,Italy,0,0
+78,Matra,France,1,0
+79,MBM,Switzerland,0,0
+80,McGuire,Australia,0,0
+81,Merzario,Italy,0,0
+82,Midland,Russia,0,0
+83,Minardi,Italy,0,0
+84,Onyx,United Kingdom,0,0
+85,O.S.C.A.,Italy,0,0
+86,Osella,Italy,0,0
+87,Pacific,United Kingdom,0,0
+88,Parnelli,United States,0,0
+89,Penske,United States,0,0
+90,Porsche,Germany,0,0
+91,Prost,France,0,0
+92,RAM,United Kingdom,0,0
+93,Racing Point Force India,United Kingdom,0,0
+94,Racing Point,United Kingdom,0,0
+95,RE,Rhodesia,0,0
+96,Renault,France,2,0
+97,Rebaque,Mexico,0,0
+98,Rial,Germany,0,0
+99,Scarab,United States,0,0
+100,Scirocco,United Kingdom,0,0
+101,Shadow,United States,0,0
+102,Shannon,United Kingdom,0,0
+103,Simtek,United Kingdom,0,0
+104,Spirit,United Kingdom,0,0
+105,Spyker,Netherlands,0,0
+106,Stebro,Canada,0,0
+107,Stewart,United Kingdom,0,0
+108,Super Aguri,Japan,0,0
+109,Surtees,United Kingdom,0,0
+110,Tec-Mec,United States,0,0
+111,Tecno,Italy,0,0
+112,Theodore,Hong Kong,0,0
+113,Token,United Kingdom,0,0
+114,Toleman,United Kingdom,0,0
+115,Toro Rosso,Italy,0,0
+116,Toyota,Japan,0,0
+117,Trojan,United Kingdom,0,0
+118,Tyrrell,United Kingdom,1,0
+119,Vanwall,United Kingdom,1,0
+120,Venturi,France,0,0
+121,Virgin,United Kingdom,0,0
+122,Wolf (Walter Wolf Racing),Canada,0,0
+123,Zakspeed,Germany,0,0

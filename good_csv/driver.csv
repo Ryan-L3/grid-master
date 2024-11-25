@@ -1,0 +1,27 @@
+﻿driver_id,full_name,team_id,nationality,date_of_birth,total_points,active,car_number
+1,Esteban Ocon,1,France,1996-09-17,445,1,31
+2,Pierre Gasly,1,France,1996-02-07,420,1,10
+3,Lance Stroll,2,Canada,1998-10-29,292,1,18
+4,Fernando Alonso,2,Spain,1981-07-29,2329,1,14
+5,Carlos Sainz,3,Spain,1994-09-01,1226.5,1,55
+6,Charles Leclerc,3,Monaco,1997-10-16,1381,1,16
+7,Kevin Magnussen,4,Denmark,1992-10-05,200,1,20
+8,Nico Hulkenberg,4,Germany,1987-08-19,561,1,27
+9,Valtteri Bottas,5,Finland,1989-08-28,1797,1,77
+10,Zhou Guanyu,5,China,1999-05-30,12,1,24
+11,Oscar Piastri,6,Australia,2001-04-06,359,1,81
+12,Lando Norris,6,United Kingdom,1999-11-13,964,1,4
+13,Lewis Hamilton,7,United Kingdom,1985-01-07,4829.5,1,44
+14,George Russell,7,United Kingdom,1998-02-15,661,1,63
+15,Liam Lawson,8,New Zealand,2002-02-11,6,1,40
+16,Yuki Tsunoda,8,Japan,2000-05-11,89,1,22
+17,Sergio Perez,9,Mexico,1990-01-26,1637,1,11
+18,Max Verstappen,9,Netherlands,1997-09-30,2979.5,1,1
+19,Franco Colapinto,10,Argentina,2003-05-27,5,1,43
+20,Alexander Albon,10,Thailand,1996-03-23,240,1,23
+21,Daniel Ricciardo,8,Australia,1989-07-01,1329,0,3
+22,Logan Sargeant,10,American,2000-12-31,1,0,2
+23,Nyck de Vries,8,Dutch,1995-02-06,2,0,21
+24,Sebastian Vettel,3,Germany,1987-07-03,3094,0,5
+25,Mick Schumacher,4,Germany,1999-03-22,12,0,47
+26,Nicholas Latifi,10,Canada,1995-06-29,9,0,6

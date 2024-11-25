@@ -1,0 +1,84 @@
+﻿race_id,circuit_id,circuit_name,race_name,unfiltered_race_date,race_date
+1,1,Yas Marina Circuit,2023 Abu Dhabi Grand Prix,2023-11-26,2023-11-26
+2,29,Las Vegas Street Circuit,2023 Las Vegas Grand Prix,2023-11-18,2023-11-18
+3,17,Autódromo José Carlos Pace,2023 São Paulo Grand Prix,2023-11-05,2023-11-05
+4,18,Autódromo Hermanos Rodríguez,2023 Mexican Grand Prix,2023-10-29,2023-10-29
+5,19,Circuit of the Americas,2023 United States Grand Prix,2023-10-22,2023-10-22
+6,16,Losail International Circuit,2023 Qatar Grand Prix,2023-10-08,2023-10-08
+7,24,Suzuka Circuit,2023 Japanese Grand Prix,2023-09-24,2023-09-24
+8,25,Marina Bay Street Circuit,2023 Singapore Grand Prix,2023-09-17,2023-09-17
+9,9,Autodromo Nazionale Monza,2023 Italian Grand Prix,2023-09-03,2023-09-03
+10,20,Circuit Park Zandvoort,2023 Dutch Grand Prix,2023-08-27,2023-08-27
+11,10,Circuit de Spa-Francorchamps,2023 Belgian Grand Prix,2023-07-30,2023-07-30
+12,13,Hungaroring,2023 Hungarian Grand Prix,2023-07-23,2023-07-23
+13,12,Silverstone Circuit,2023 British Grand Prix,2023-07-09,2023-07-09
+14,14,Red Bull Ring,2023 Austrian Grand Prix,2023-07-02,2023-07-02
+15,26,Circuit Gilles Villeneuve,2023 Canadian Grand Prix,2023-06-18,2023-06-18
+16,11,Circuit de Barcelona-Catalunya,2023 Spanish Grand Prix,2023-06-04,2023-06-04
+17,23,Circuit de Monaco,2023 Monaco Grand Prix,2023-05-28,2023-05-28
+18,27,Miami International Autodrome,2023 Miami Grand Prix,2023-05-07,2023-05-07
+19,22,Baku City Circuit,2023 Azerbaijan Grand Prix,2023-04-30,2023-04-30
+20,28,Melbourne Grand Prix Circuit,2023 Australian Grand Prix,2023-04-02,2023-04-02
+21,15,Jeddah Corniche Circuit,2023 Saudi Arabian Grand Prix,2023-03-19,2023-03-19
+22,2,Bahrain International Circuit,2023 Bahrain Grand Prix,2023-03-05,2023-03-05
+23,1,Yas Marina Circuit,2022 Abu Dhabi Grand Prix,2022-11-20,2022-11-20
+24,17,Autódromo José Carlos Pace,2022 São Paulo Grand Prix,2022-11-13,2022-11-13
+25,18,Autódromo Hermanos Rodríguez,2022 Mexican Grand Prix,2022-10-30,2022-10-30
+26,19,Circuit of the Americas,2022 United States Grand Prix,2022-10-23,2022-10-23
+27,24,Suzuka Circuit,2022 Japanese Grand Prix,2022-10-09,2022-10-09
+28,25,Marina Bay Street Circuit,2022 Singapore Grand Prix,2022-10-02,2022-10-02
+29,9,Autodromo Nazionale Monza,2022 Italian Grand Prix,2022-09-11,2022-09-11
+30,20,Circuit Park Zandvoort,2022 Dutch Grand Prix,2022-09-04,2022-09-04
+31,10,Circuit de Spa-Francorchamps,2022 Belgian Grand Prix,2022-08-28,2022-08-28
+32,13,Hungaroring,2022 Hungarian Grand Prix,2022-07-31,2022-07-31
+33,21,Circuit Paul Ricard,2022 French Grand Prix,2022-07-24,2022-07-24
+34,14,Red Bull Ring,2022 Austrian Grand Prix,2022-07-10,2022-07-10
+35,12,Silverstone Circuit,2022 British Grand Prix,2022-07-03,2022-07-03
+36,26,Circuit Gilles Villeneuve,2022 Canadian Grand Prix,2022-06-19,2022-06-19
+37,22,Baku City Circuit,2022 Azerbaijan Grand Prix,2022-06-12,2022-06-12
+38,23,Circuit de Monaco,2022 Monaco Grand Prix,2022-05-29,2022-05-29
+39,11,Circuit de Barcelona-Catalunya,2022 Spanish Grand Prix,2022-05-22,2022-05-22
+40,27,Miami International Autodrome,2022 Miami Grand Prix,2022-05-08,2022-05-08
+41,4,Autodromo Internazionale Enzo e Dino Ferrari,2022 Emilia Romagna Grand Prix,2022-04-24,2022-04-24
+42,28,Melbourne Grand Prix Circuit,2022 Australian Grand Prix,2022-04-10,2022-04-10
+43,15,Jeddah Corniche Circuit,2022 Saudi Arabian Grand Prix,2022-03-27,2022-03-27
+44,2,Bahrain International Circuit,2022 Bahrain Grand Prix,2022-03-20,2022-03-20
+45,1,Yas Marina Circuit,2021 Abu Dhabi Grand Prix,2021-12-12,2021-12-12
+46,15,Jeddah Corniche Circuit,2021 Saudi Arabian Grand Prix,2021-12-05,2021-12-05
+47,16,Losail International Circuit,2021 Qatar Grand Prix,2021-11-21,2021-11-21
+48,17,Autódromo José Carlos Pace,2021 São Paulo Grand Prix,2021-11-14,2021-11-14
+49,18,Autódromo Hermanos Rodríguez,2021 Mexican Grand Prix,2021-11-07,2021-11-07
+50,19,Circuit of the Americas,2021 United States Grand Prix,2021-10-24,2021-10-24
+51,3,Istanbul Park,2021 Turkish Grand Prix,2021-10-03,2021-10-03
+52,7,Sochi Autodrom,2021 Russian Grand Prix,2021-09-26,2021-09-26
+53,9,Autodromo Nazionale Monza,2021 Italian Grand Prix,2021-09-12,2021-09-12
+54,20,Circuit Park Zandvoort,2021 Dutch Grand Prix,2021-09-05,2021-09-05
+55,10,Circuit de Spa-Francorchamps,2021 Belgian Grand Prix,2021-08-29,2021-08-29
+56,13,Hungaroring,2021 Hungarian Grand Prix,2021-08-01,2021-08-01
+57,12,Silverstone Circuit,2021 British Grand Prix,2021-07-18,2021-07-18
+58,14,Red Bull Ring,2021 Austrian Grand Prix,2021-07-04,2021-07-04
+59,14,Red Bull Ring,2021 Styrian Grand Prix,2021-06-27,2021-06-27
+60,21,Circuit Paul Ricard,2021 French Grand Prix,2021-06-20,2021-06-20
+61,22,Baku City Circuit,2021 Azerbaijan Grand Prix,2021-06-06,2021-06-06
+62,23,Circuit de Monaco,2021 Monaco Grand Prix,2021-05-23,2021-05-23
+63,11,Circuit de Barcelona-Catalunya,2021 Spanish Grand Prix,2021-05-09,2021-05-09
+64,5,Algarve International Circuit,2021 Portuguese Grand Prix,2021-05-02,2021-05-02
+65,4,Autodromo Internazionale Enzo e Dino Ferrari,2021 Emilia Romagna Grand Prix,2021-04-18,2021-04-18
+66,2,Bahrain International Circuit,2021 Bahrain Grand Prix,2021-03-28,2021-03-28
+67,1,Yas Marina Circuit,2020 Abu Dhabi Grand Prix,2020-12-13,2020-12-13
+68,2,Bahrain International Circuit,2020 Sakhir Grand Prix,2020-12-06,2020-12-06
+69,2,Bahrain International Circuit,2020 Bahrain Grand Prix,2020-11-29,2020-11-29
+70,3,Istanbul Park,2020 Turkish Grand Prix,2020-11-15,2020-11-15
+71,4,Autodromo Internazionale Enzo e Dino Ferrari,2020 Emilia Romagna Grand Prix,2020-11-01,2020-11-01
+72,5,Algarve International Circuit,2020 Portuguese Grand Prix,2020-10-25,2020-10-25
+73,6,Nürburgring,2020 Eifel Grand Prix,2020-10-11,2020-10-11
+74,7,Sochi Autodrom,2020 Russian Grand Prix,2020-09-27,2020-09-27
+75,8,Autodromo Internazionale del Mugello,2020 Tuscan Grand Prix,2020-09-13,2020-09-13
+76,9,Autodromo Nazionale Monza,2020 Italian Grand Prix,2020-09-06,2020-09-06
+77,10,Circuit de Spa-Francorchamps,2020 Belgian Grand Prix,2020-08-30,2020-08-30
+78,11,Circuit de Barcelona-Catalunya,2020 Spanish Grand Prix,2020-08-16,2020-08-16
+79,12,Silverstone Circuit,2020 70th Anniversary Grand Prix,2020-08-09,2020-08-09
+80,12,Silverstone Circuit,2020 British Grand Prix,2020-08-02,2020-08-02
+81,13,Hungaroring,2020 Hungarian Grand Prix,2020-07-19,2020-07-19
+82,14,Red Bull Ring,2020 Styrian Grand Prix,2020-07-12,2020-07-12
+83,14,Red Bull Ring,2020 Austrian Grand Prix,2020-07-05,2020-07-05

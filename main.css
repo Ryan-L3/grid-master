@@ -34,3 +34,7 @@ p {
 .semi-bold {
     font-weight: 600;
 }
+
+body main{
+    padding-left: 20%;
+}

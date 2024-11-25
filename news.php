@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="text-center">
-            <h1>Grid Master - News</h1>
+            <h1>Grid Master</h1>
         </div>
     </header>
     <?php include('navbar/navbar.php'); ?>

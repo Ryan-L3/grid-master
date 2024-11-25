@@ -1,3 +1,10 @@
+<?php
+function isActive($page)
+{
+    return (basename($_SERVER["PHP_SELF"]) == $page) ? "active" : "";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,25 +16,19 @@
 
 <body>
     <nav class="sidenav" id="sidenav">
-
-        <a href="index.php" class="f1-logo">
+        <a href="drivers.php" class="f1-logo">
             <img src="public/F1.svg">
         </a>
-
-        <a href="index.php" class="nav-link">
-            <span class="nav-text">Home</span>
-        </a>
-        <a href="drivers.php" class="nav-link">
+        <a href="drivers.php" class="nav-link <?php echo isActive("drivers.php"); ?>">
             <span class="nav-text">Drivers</span>
         </a>
-        <a href="teams.php" class="nav-link">
+        <a href="teams.php" class="nav-link <?php echo isActive("teams.php"); ?>">
             <span class="nav-text">Teams</span>
         </a>
-        <a href="news.php" class="nav-link">
+        <a href="news.php" class="nav-link <?php echo isActive("news.php"); ?>">
             <span class="nav-text">News</span>
         </a>
     </nav>
-
 </body>
 
 </html>
