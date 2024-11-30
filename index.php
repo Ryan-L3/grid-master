@@ -1,6 +1,7 @@
 <?php
+session_start();
 
-require('connect.php');
+require('database/db_connect.php');
 
 $query = "SELECT * FROM drivers";
 
@@ -24,13 +25,6 @@ $statement->execute();
     <link rel="stylesheet" href="main.css">
     <title>Grid Master</title>
 </head>
-
-
-<header class="header">
-    <div class="text-center">
-        <h1>Grid Master</h1>
-    </div>
-</header>
 
 <?php include('navbar/navbar.php'); ?>
 

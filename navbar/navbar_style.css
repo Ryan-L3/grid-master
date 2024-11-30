@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+.header {
+    display: flex;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-left: 250px;
+    align-items: center;
+    height: 90px;
+    justify-content: space-between;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700; 
+    padding-left: 10%;
+}
+
 .sidenav {
     height: 100vh;
     width: 250px;
@@ -42,4 +61,13 @@
 
 .nav-link.active .nav-text {
     font-weight: bold;
+}
+
+.user-navigation {
+    margin-left: auto;
+    padding-right: 10%;
+}
+
+.btn-outline-light {
+    margin-right: 50px; /* Increased margin */
 }
