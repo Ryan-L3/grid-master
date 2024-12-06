@@ -21,13 +21,52 @@ $statement->execute();
     <link rel="icon" type="image/svg+xml" href="public/F1.svg">
     <link rel="stylesheet" href="main.css">
     <title>Grid Master</title>
+    <style>
+        .page-header {
+            background: linear-gradient(to right, #1a1a1a, #333333);
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            border: 1px solid #dee2e6;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card-header {
+            background-color: #1a1a1a;
+            color: white;
+            border-top-left-radius: 10px !important;
+            border-top-right-radius: 10px !important;
+        }
+
+        .btn-dark {
+            background-color: #1a1a1a;
+            border-color: #1a1a1a;
+        }
+
+        .btn-outline-dark {
+            border-color: #1a1a1a;
+            color: #1a1a1a;
+        }
+
+        .btn-outline-dark:hover {
+            background-color: #1a1a1a;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
     <?php include('navbar/navbar.php'); ?>
 
     <main class="container mt-4" style="margin-left: 300px;">
-        <h2 class="mb-4">Formula 1 Drivers</h2>
+        <div class="page-header">
+            <h1 class="display-4 text-white mb-0">Formula 1 Drivers</h1>
+            <p class="lead text-white-50 mt-2 mb-0">Current Driver Standings</p>
+        </div>
 
         <?php if ($statement->rowCount() == 0): ?>
             <div class="alert alert-info">
@@ -38,9 +77,11 @@ $statement->execute();
         <div class="row">
             <?php while ($row = $statement->fetch()): ?>
                 <div class="col-12 col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card h-100 shadow-sm driver-card">
+                        <div class="card-header">
+                            <h3 class="card-title h5 mb-0"><?= htmlspecialchars($row['full_name']) ?></h3>
+                        </div>
                         <div class="card-body">
-                            <h3 class="card-title h5 mb-3"><?= htmlspecialchars($row['full_name']) ?></h3>
                             <div class="driver-details">
                                 <p class="card-text"><strong>Nationality:</strong>
                                     <?= htmlspecialchars($row['nationality']) ?></p>
@@ -51,7 +92,7 @@ $statement->execute();
                                     <?= htmlspecialchars($row['total_points']) ?></p>
                                 <p class="card-text"><strong>Date of Birth:</strong>
                                     <?= date_format(date_create($row['date_of_birth']), 'F j, Y') ?></p>
-                                <p class="card-text">
+                                <p class="card-text mb-0">
                                     <strong>Status:</strong>
                                     <span class="badge <?= $row['active'] ? 'badge-success' : 'badge-secondary' ?>">
                                         <?= $row['active'] ? 'Active' : 'Inactive' ?>
@@ -59,12 +100,12 @@ $statement->execute();
                                 </p>
                             </div>
                         </div>
-                        <div class="card-footer bg-transparent border-top-0">
+                        <div class="card-footer bg-transparent">
                             <div class="d-flex justify-content-between">
-                                <a href="show.php?id=<?= htmlspecialchars($row['driver_id']) ?>"
-                                    class="btn btn-primary btn-sm">View Details</a>
+                                <a href="driver_details.php?id=<?= htmlspecialchars($row['driver_id']) ?>"
+                                    class="btn btn-dark btn-sm">View Details</a>
                                 <a href="edit.php?id=<?= htmlspecialchars($row['driver_id']) ?>"
-                                    class="btn btn-secondary btn-sm">Edit</a>
+                                    class="btn btn-outline-dark btn-sm">Edit</a>
                             </div>
                         </div>
                     </div>
