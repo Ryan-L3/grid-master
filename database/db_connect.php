@@ -1,5 +1,4 @@
 <?php
-require_once 'azure_config.php';
 
 try {
     // Connection parameters
