@@ -21,42 +21,6 @@ $statement->execute();
     <link rel="icon" type="image/svg+xml" href="public/F1.svg">
     <link rel="stylesheet" href="main.css">
     <title>Grid Master</title>
-    <style>
-        .page-header {
-            background: linear-gradient(to right, #1a1a1a, #333333);
-            color: white;
-            padding: 2rem;
-            border-radius: 10px;
-            margin-bottom: 2rem;
-        }
-
-        .card {
-            border: 1px solid #dee2e6;
-            transition: transform 0.2s, border-color 0.2s;
-        }
-
-        .card-header {
-            background-color: #1a1a1a;
-            color: white;
-            border-top-left-radius: 10px !important;
-            border-top-right-radius: 10px !important;
-        }
-
-        .btn-dark {
-            background-color: #1a1a1a;
-            border-color: #1a1a1a;
-        }
-
-        .btn-outline-dark {
-            border-color: #1a1a1a;
-            color: #1a1a1a;
-        }
-
-        .btn-outline-dark:hover {
-            background-color: #1a1a1a;
-            color: white;
-        }
-    </style>
 </head>
 
 <body>

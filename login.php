@@ -63,8 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <form action="" method="post" class="form-control mt-5 p-4" style="height:auto; width:380px; box-shadow: rgba(60, 64, 67, 0.3) 
             0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
             <div class="row">
-
-                <i class="fa fa-user-circle-o fa-3x mt-1 mb-2" style="text-align: center; color: black;"></i>
+                <img src="public/F1.svg" style="filter: brightness(0) saturate(100%);">
                 <h5 class="text-center p-4" style="font-weight: 700;">Login Into Your Account</h5>
             </div>
             <div class="col-mb-3">

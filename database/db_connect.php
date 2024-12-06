@@ -1,19 +1,25 @@
 <?php
-define('DB_DSN', 'mysql:host=localhost;dbname=webdev_final;charset=utf8');
-define('DB_USER', 'rle');
-define('DB_PASS', '6237');
 
-//  PDO is PHP Data Objects
-//  mysqli <-- BAD. 
-//  PDO <-- GOOD.
 try {
-    // Try creating new PDO connection to MySQL.
-    $db = new PDO(DB_DSN, DB_USER, DB_PASS);
-    //,array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION)
+    // Connection parameters
+    $host = "rle-server.mysql.database.azure.com";
+    $username = "bckcctbcay";
+    $password = 'yBJedelxw12Vb$dK';
+    $database = "rle-database";
+    $dsn = "mysql:host=$host;dbname=$database;port=3306;charset=utf8mb4";
+
+    // SSL Certificate Path
+    $options = [
+        PDO::MYSQL_ATTR_SSL_CA => "DigiCertGlobalRootCA.crt.pem",
+        PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
+        PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
+    ];
+
+    // Create PDO instance
+    $db = new PDO($dsn, $username, $password, $options);
+
 } catch (PDOException $e) {
-    print "Error: " . $e->getMessage();
-    die(); // Force execution to stop on errors.
-    // When deploying to production you should handle this
-    // situation more gracefully. ¯\_(ツ)_/¯
+    die("Connection failed: " . $e->getMessage());
 }
+
 ?>

@@ -9,17 +9,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    // Check if email already exists using PDO
     $checkEmailStmt = $db->prepare("SELECT email FROM userdata WHERE email = ?");
     $checkEmailStmt->execute([$email]);
 
     if ($checkEmailStmt->rowCount() > 0) {
         $message = "Email ID already exists";
-        $toastClass = "bg-primary";
+        $toastClass = "bg-danger";
     } else {
-
         $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-
         $stmt = $db->prepare("INSERT INTO userdata (username, email, password) VALUES (?, ?, ?)");
 
         try {
@@ -52,14 +49,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body class="bg-light">
     <div class="container p-5 d-flex flex-column align-items-center">
         <?php if ($message): ?>
-            <div class="toast align-items-center text-white border-0" role="alert" aria-live="assertive" aria-atomic="true"
-                style="background-color: <?php echo $toastClass; ?>;">
+            <div class="toast show align-items-center text-white border-0 <?php echo $toastClass; ?>" role="alert"
+                aria-live="assertive" aria-atomic="true">
                 <div class="d-flex">
                     <div class="toast-body">
                         <?php echo $message; ?>
                     </div>
-                    <button type="button" class="btn-close
-                    btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
+                        aria-label="Close"></button>
                 </div>
             </div>
         <?php endif; ?>
@@ -68,7 +65,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
 
             <div class="row text-center">
-                <i class="fa fa-user-circle-o fa-3x mt-1 mb-2" style="color: black;"></i>
+                <img src="public/F1.svg" style="filter: brightness(0) saturate(100%);">
                 <h5 class="p-4" style="font-weight: 700;">Create Your Account</h5>
             </div>
             <div class="mb-2">
@@ -97,9 +94,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </form>
     </div>
     <script>
-        let toastElList = [].slice.call(document.querySelectorAll('.toast'))
-        let toastList = toastElList.map(function (toastEl) {
-            return new bootstrap.Toast(toastEl, { delay: 3000 });
+        var toastElList = [].slice.call(document.querySelectorAll('.toast'));
+        var toastList = toastElList.map(function (toastEl) {
+            return new bootstrap.Toast(toastEl, {
+                autohide: true,
+                delay: 3000
+            });
         });
         toastList.forEach(toast => toast.show());
     </script>
