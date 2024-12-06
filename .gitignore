@@ -1,1 +1,2 @@
 database/azure_config.php
+database/db_connect.php
