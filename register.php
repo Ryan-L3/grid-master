@@ -17,11 +17,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $message = "Email ID already exists";
         $toastClass = "bg-primary";
     } else {
-        // Prepare and execute insert using PDO
+
+        $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
+
         $stmt = $db->prepare("INSERT INTO userdata (username, email, password) VALUES (?, ?, ?)");
 
         try {
-            if ($stmt->execute([$username, $email, $password])) {
+            if ($stmt->execute([$username, $email, $hashedPassword])) {
                 $message = "Account created successfully";
                 $toastClass = "bg-success";
             }
@@ -42,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/295/295128.png">
+    <link rel="icon" type="image/svg+xml" href="public/F1.svg">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Registration</title>
 </head>
@@ -78,7 +81,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="mb-2 mt-2">
                 <label for="password"><i class="fa fa-lock"></i> Password</label>
-                <input type="text" name="password" id="password" class="form-control" required>
+                <input type="password" name="password" id="password" class="form-control" required>
             </div>
             <div class="mb-2 mt-3 d-flex justify-content-between">
                 <a href="index.php" class="btn btn-outline-dark" style="width: 70px">

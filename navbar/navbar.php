@@ -15,7 +15,7 @@ function isActive($page)
 </head>
 
 <body>
-    <header class="header">
+    <header class="header ">
         <h1>Grid Master</h1>
         <?php if (!isset($_SESSION['email'])): ?>
             <a href="login.php">

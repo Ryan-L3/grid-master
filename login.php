@@ -1,5 +1,5 @@
 <?php
-
+// References: https://www.geeksforgeeks.org/creating-a-registration-and-login-system-with-php-and-mysql/
 include 'database/db_connect.php';
 
 $message = "";
@@ -9,19 +9,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    // Prepare and execute using PDO
-    $stmt = $db->prepare("SELECT password FROM userdata WHERE email = ?");
-    $stmt->execute([$email]); // PDO way of binding parameters
+    $stmt = $db->prepare("SELECT * FROM userdata WHERE email = ?");
+    $stmt->execute([$email]);
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
-    if ($stmt->rowCount() > 0) {
-        $result = $stmt->fetch(PDO::FETCH_ASSOC);
-
-        if ($password === $result['password']) {
+    if ($user) {
+        if (password_verify($password, $user['password'])) {
             $message = "Login successful";
             $toastClass = "bg-success";
-            // Start the session and redirect to the dashboard or home page
+
             session_start();
             $_SESSION['email'] = $email;
+            $_SESSION['user_id'] = $user['id'];
             header("Location: index.php");
             exit();
         } else {
@@ -42,9 +41,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/295/295128.png">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="icon" type="image/svg+xml" href="public/F1.svg">
     <title>Login Page</title>
 </head>
 
@@ -75,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
             <div class="col mb-3 mt-3">
                 <label for="password"><i class="fa fa-lock"></i> Password</label>
-                <input type="text" name="password" id="password" class="form-control" required>
+                <input type="password" name="password" id="password" class="form-control" required>
             </div>
             <div class="col mb-3 mt-3 d-flex justify-content-between">
                 <a href="index.php" class="btn btn-outline-dark" style="width: 70px">

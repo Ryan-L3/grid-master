@@ -1,12 +1,11 @@
 * {
-    margin: 0;
-    margin-left: 250px;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
 p {
-    font-weight: 400; 
+    font-weight: 400;
+    margin-bottom: 0.5rem;
 }
 
 .light-text {
@@ -21,6 +20,6 @@ p {
     font-weight: 600;
 }
 
-body main{
-    padding-left: 20%;
+body main {
+    padding-left: 0;
 }
