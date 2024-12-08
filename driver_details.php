@@ -86,42 +86,15 @@ if (!$driver) {
                 </div>
             </div>
 
-            <div class="col-12 mb-4">
-                <div class="card shadow stat-card">
-                    <div class="card-header">
-                        <h3 class="card-title mb-0">Career Statistics</h3>
-                    </div>
-                    <div class="card-body">
-                        <div class="row text-center">
-                            <div class="col-md-4">
-                                <div class="p-3">
-                                    <h4 class="display-4"><?= htmlspecialchars($driver['total_points']) ?></h4>
-                                    <p class="text-muted">Total Points</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="p-3">
-                                    <h4 class="display-4"><?= htmlspecialchars($driver['team_id']) ?></h4>
-                                    <p class="text-muted">Team Number</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="p-3">
-                                    <h4 class="display-4">#<?= htmlspecialchars($driver['car_number']) ?></h4>
-                                    <p class="text-muted">Car Number</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
 
-        <!-- Action Buttons -->
         <div class="row mb-4">
             <div class="col">
-                <a href="edit.php?id=<?= htmlspecialchars($driver['driver_id']) ?>" class="btn btn-dark">Edit Driver
-                    Details</a>
+                <?php if (isset($_SESSION['email'])): ?>
+                    <a href="edit.php?id=<?= htmlspecialchars($row['driver_id']) ?>"
+                        class="btn btn-outline-dark btn-sm">Edit Driver
+                        Details</a>
+                <?php endif; ?>
             </div>
         </div>
     </main>
