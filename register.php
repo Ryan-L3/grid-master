@@ -22,6 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         try {
             if ($stmt->execute([$username, $email, $hashedPassword])) {
                 $message = "Account created successfully";
+                header("Location: login.php");
                 $toastClass = "bg-success";
             }
         } catch (PDOException $e) {

@@ -41,9 +41,9 @@ function isActive($page)
         <a href="teams.php" class="nav-link <?php echo isActive("teams.php"); ?>">
             <span class="nav-text">Teams</span>
         </a>
-        <a href="news.php" class="nav-link <?php echo isActive("news.php"); ?>">
+        <!-- <a href="news.php" class="nav-link <?php echo isActive("news.php"); ?>">
             <span class="nav-text">News</span>
-        </a>
+        </a> -->
     </nav>
 </body>
 

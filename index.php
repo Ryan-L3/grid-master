@@ -49,7 +49,7 @@ $statement->execute();
                             <div class="driver-details">
                                 <p class="card-text"><strong>Nationality:</strong>
                                     <?= htmlspecialchars($row['nationality']) ?></p>
-                                <p class="card-text"><strong>Team ID:</strong> <?= htmlspecialchars($row['team_id']) ?></p>
+                                <!-- <p class="card-text"><strong>Team ID:</strong> <?= htmlspecialchars($row['team_id']) ?></p> -->
                                 <p class="card-text"><strong>Car Number:</strong>
                                     <?= htmlspecialchars($row['car_number']) ?></p>
                                 <p class="card-text"><strong>Total Points:</strong>
@@ -68,8 +68,10 @@ $statement->execute();
                             <div class="d-flex justify-content-between">
                                 <a href="driver_details.php?id=<?= htmlspecialchars($row['driver_id']) ?>"
                                     class="btn btn-dark btn-sm">View Details</a>
-                                <a href="edit.php?id=<?= htmlspecialchars($row['driver_id']) ?>"
-                                    class="btn btn-outline-dark btn-sm">Edit</a>
+                                <?php if (isset($_SESSION['email'])): ?>
+                                    <a href="edit.php?id=<?= htmlspecialchars($row['driver_id']) ?>"
+                                        class="btn btn-outline-dark btn-sm">Edit</a>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
