@@ -79,7 +79,7 @@ if (!$driver) {
                         <h3 class="card-title mb-0">Racing Information</h3>
                     </div>
                     <div class="card-body">
-                        <p><strong>Team ID:</strong> <?= htmlspecialchars($driver['team_id']) ?></p>
+                        <!-- <p><strong>Team ID:</strong> <?= htmlspecialchars($driver['team_id']) ?></p> -->
                         <p><strong>Car Number:</strong> <?= htmlspecialchars($driver['car_number']) ?></p>
                         <p><strong>Total Points:</strong> <?= htmlspecialchars($driver['total_points']) ?></p>
                     </div>
