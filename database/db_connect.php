@@ -10,7 +10,7 @@ try {
 
     // SSL Certificate Path
     $options = [
-        PDO::MYSQL_ATTR_SSL_CA => "DigiCertGlobalRootCA.crt.pem",
+        PDO::MYSQL_ATTR_SSL_CA => __DIR__ . "/DigiCertGlobalRootCA.crt.pem",
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     ];
