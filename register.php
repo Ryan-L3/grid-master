@@ -1,5 +1,12 @@
 <?php
+session_start();
+
 include 'database/db_connect.php';
+
+if (!isset($_SESSION['email'])) {
+    header("Location: login.php");
+    exit();
+}
 
 $message = "";
 $toastClass = "";
@@ -22,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         try {
             if ($stmt->execute([$username, $email, $hashedPassword])) {
                 $message = "Account created successfully";
-                header("Location: login.php");
+                header("Location: manage_users.php");
                 $toastClass = "bg-success";
             }
         } catch (PDOException $e) {
@@ -70,28 +77,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <h5 class="p-4" style="font-weight: 700;">Create Your Account</h5>
             </div>
             <div class="mb-2">
-                <label for="username"><i class="fa fa-user"></i> User Name</label>
+                <label for="username">User Name</label>
                 <input type="text" name="username" id="username" class="form-control" required>
             </div>
             <div class="mb-2 mt-2">
-                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <label for="email">Email</label>
                 <input type="text" name="email" id="email" class="form-control" required>
             </div>
             <div class="mb-2 mt-2">
-                <label for="password"><i class="fa fa-lock"></i> Password</label>
+                <label for="password">Password</label>
                 <input type="password" name="password" id="password" class="form-control" required>
             </div>
             <div class="mb-2 mt-3 d-flex justify-content-between">
-                <a href="index.php" class="btn btn-outline-dark" style="width: 70px">
+                <a href="manage_users.php" class="btn btn-outline-dark" style="width: 70px">
                     Back
                 </a>
                 <button type="submit" class="btn btn-primary" style="font-weight: 600;">Create
                     Account</button>
             </div>
-            <div class="mb-2 mt-4">
-                <p class="text-center" style="font-weight: 600; 
-                color: navy;">I have an account. <a href="./login.php" style="text-decoration: none;">Login</a></p>
-            </div>
+
         </form>
     </div>
     <script>
