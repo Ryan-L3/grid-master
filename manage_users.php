@@ -31,6 +31,10 @@ $users = $db->query($query)->fetchAll(PDO::FETCH_ASSOC);
     <?php include('navbar/navbar.php'); ?>
 
     <main class="container mt-4" style="margin-left: 300px;">
+        <a href="admin.php" class="btn btn-outline-dark mb-4">
+            &larr; Back to dashboard
+        </a>
+
         <div class="page-header mb-4">
             <h1 class="display-4 text-white">Manage Users</h1>
         </div>
