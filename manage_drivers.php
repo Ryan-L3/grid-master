@@ -72,7 +72,7 @@ $drivers = $db->query($query)->fetchAll(PDO::FETCH_ASSOC);
                                     </span>
                                 </td>
                                 <td>
-                                    <a href="edit_driver.php?id=<?= $driver['driver_id'] ?>"
+                                    <a href="edit.php?id=<?= $driver['driver_id'] ?>"
                                         class="btn btn-sm btn-outline-primary">Edit</a>
                                     <button class="btn btn-sm btn-outline-danger"
                                         onclick="deleteDriver(<?= $driver['driver_id'] ?>)">Delete</button>
