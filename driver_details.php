@@ -87,16 +87,6 @@ if (!$driver) {
             </div>
 
         </div>
-
-        <div class="row mb-4">
-            <div class="col">
-                <?php if (isset($_SESSION['email'])): ?>
-                    <a href="edit.php?id=<?= htmlspecialchars($row['driver_id']) ?>"
-                        class="btn btn-outline-dark btn-sm">Edit Driver
-                        Details</a>
-                <?php endif; ?>
-            </div>
-        </div>
     </main>
 
 
