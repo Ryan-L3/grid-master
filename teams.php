@@ -1,3 +1,8 @@
+<?php
+session_start();
+require('database/db_connect.php');
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

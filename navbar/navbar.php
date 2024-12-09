@@ -1,7 +1,14 @@
 <?php
 function isActive($page)
 {
-    return (basename($_SERVER["PHP_SELF"]) == $page) ? "active" : "";
+    $currentPage = basename($_SERVER["PHP_SELF"]);
+
+    $adminPages = ['admin.php', 'manage_drivers.php', 'manage_users.php'];
+    if ($page === 'admin.php' && in_array($currentPage, $adminPages)) {
+        return "active";
+    }
+
+    return ($currentPage === $page) ? "active" : "";
 }
 ?>
 
@@ -38,12 +45,15 @@ function isActive($page)
         <a href="index.php" class="nav-link <?php echo isActive("index.php"); ?>">
             <span class="nav-text">Drivers</span>
         </a>
-        <a href="teams.php" class="nav-link <?php echo isActive("teams.php"); ?>">
+        <!-- <a href="teams.php" class="nav-link <?php echo isActive("teams.php"); ?>">
             <span class="nav-text">Teams</span>
-        </a>
-        <!-- <a href="news.php" class="nav-link <?php echo isActive("news.php"); ?>">
-            <span class="nav-text">News</span>
         </a> -->
+        <?php if (isset($_SESSION['email'])): ?>
+            <a href="admin.php" class="nav-link <?php echo isActive("admin.php"); ?>">
+                <span class="nav-text">Admin Dashboard</span>
+            </a>
+        <?php endif; ?>
+
     </nav>
 </body>
 
